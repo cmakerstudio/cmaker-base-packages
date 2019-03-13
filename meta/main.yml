@@ -1,3 +1,5 @@
+---
+
 galaxy_info:
   author: Laurent Dumont
   description: Sysadmin and Network Specialist
@@ -6,7 +8,7 @@ galaxy_info:
   min_ansible_version: 1.2
   galaxy_tags: []
   platforms:
-  - name: Debian
-    versions:
-    - all
+    - name: Debian
+      versions:
+        - all
 dependencies: []

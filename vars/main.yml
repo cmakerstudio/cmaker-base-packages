@@ -1,33 +1,35 @@
+---
+
 packages:
-- apt-transport-https
-- ca-certificates
-- curl
-- git
-- vim
-- htop
-- sudo
-- gnupg2
-- python-pip
-- python3-pip
-- gcc
-- make
-- autoconf
-- autoconf-archive
-- autogen
-- automake
-- pkg-config
-- lm-sensors
-- dstat
-- sysstat
-- snmp
-- mtr
-- ncdu
-- tcpdump
-- atop
-- python-dev
-- net-tools
-- locate
-- man
-- bash-completion
-- dnsutils
-- iftop
+  - apt-transport-https
+  - ca-certificates
+  - curl
+  - git
+  - vim
+  - htop
+  - sudo
+  - gnupg2
+  - python-pip
+  - python3-pip
+  - gcc
+  - make
+  - autoconf
+  - autoconf-archive
+  - autogen
+  - automake
+  - pkg-config
+  - lm-sensors
+  - dstat
+  - sysstat
+  - snmp
+  - mtr
+  - ncdu
+  - tcpdump
+  - atop
+  - python-dev
+  - net-tools
+  - locate
+  - man
+  - bash-completion
+  - dnsutils
+  - iftop
