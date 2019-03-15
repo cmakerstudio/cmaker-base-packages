@@ -4,14 +4,9 @@ dist: xenial
 
 before_install:
   # Make sure everything's up to date.
-  - sudo add-apt-repository ppa:deadsnakes/ppa --yes
   - sudo apt-get update -qq
-  - sudo apt-get install python3.6 python3-pip libssl-dev python3-setuptools ansible
-  - sudo pip3 install molecule wheel
-
-install:
-  # Install Ansible.
-  - pip3 install ansible
+  - sudo apt-get install libssl-dev python-setuptools
+  - sudo pip install molecule wheel ansible
 
 script:
-  - sudo python2.7 molecule test
+  - sudo python2.7 /home/travis/.local/bin/molecule test --destroy=never 
