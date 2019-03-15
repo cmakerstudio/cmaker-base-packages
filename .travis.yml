@@ -14,4 +14,4 @@ install:
   - pip3 install ansible
 
 script:
-  - sudo molecule test
+  - sudo python3.6 molecule test
