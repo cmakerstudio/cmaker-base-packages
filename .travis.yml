@@ -1,0 +1,15 @@
+---
+language: python
+python: "2.7"
+
+before_install:
+  # Make sure everything's up to date.
+  - sudo apt-get update -qq
+  - sudo pip3 install molecule
+
+install:
+  # Install Ansible.
+  - pip3 install ansible
+
+script:
+  - sudo molecule test
