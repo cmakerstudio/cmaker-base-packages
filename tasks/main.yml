@@ -1,5 +1,7 @@
 ---
+
 - name: Install base packages
   package:
     name: "{{ packages }}"
     state: present
+    update_cache: yes
