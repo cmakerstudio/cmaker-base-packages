@@ -1,7 +1,14 @@
 ---
 
+- name: Make sure the Proxmox Enterprise APT list file is not present.
+  file:
+    path: /etc/apt/sources.list.d/pve-enterprise.list
+    state: absent
+  when: "'proxmox-servers' in group_names"
+
 - name: Install base packages
   package:
     name: "{{ packages }}"
     state: present
     update_cache: yes
+
